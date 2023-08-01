@@ -1,0 +1,12 @@
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-logo {
+  height: 300px;
+  pointer-events: none;
+}
