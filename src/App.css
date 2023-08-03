@@ -1,5 +1,5 @@
 .App {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -10,6 +10,7 @@
   justify-content: flex-end;
   gap: 10px;
   margin-right: 10px;
+  /* z-index: 1; */
 }
 
 .nav a:link {
@@ -31,6 +32,18 @@
   color: lightgray;
   background-color: transparent;
   text-decoration: none;
+}
+
+.background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 

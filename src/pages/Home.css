@@ -9,4 +9,5 @@
 .home-logo {
   height: 300px;
   pointer-events: none;
+  opacity: 80%;
 }

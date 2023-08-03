@@ -5,6 +5,7 @@ import Experience from './pages/Experience';
 import Home from './pages/Home';
 import NoMatch from './pages/NoMatch';
 import Contact from './pages/Contact';
+import thunderVideo from './thunder-background.mp4'
 
 function App() {
   return (
@@ -28,6 +29,10 @@ function App() {
           <Route path="*" element={<NoMatch />} />
         </Routes>
       </Router>
+      <video autoPlay='autoplay' muted className='background-video'>
+        <source src={thunderVideo} type='video/mp4'/>
+        Your browser does not support this video
+      </video>
     </div>
   );
 }
