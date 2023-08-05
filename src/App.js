@@ -29,7 +29,12 @@ function App() {
           <Route path="*" element={<NoMatch />} />
         </Routes>
       </Router>
-      <video autoPlay='autoplay' muted className='background-video'>
+      <video 
+        className='background-video'
+        autoPlay='autoplay'
+        loop
+        muted
+      > 
         <source src={thunderVideo} type='video/mp4'/>
         Your browser does not support this video
       </video>
