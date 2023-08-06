@@ -5,57 +5,6 @@
   color: white;
 }
 
-.nav-container {
-  position: absolute;
-  top: 20px;
-  width: 100vw;
-  height: 50px;
-}
-
-.nav {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  /* margin-top: 40px; */
-  margin-right: 40px;
-  font-size: 18px;
-  /* z-index: 1; */
-}
-
-.nav a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-.nav a:visited {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-.nav a:hover {
-  color: grey;
-  background-color: transparent;
-  text-decoration: underline;
-}
-.nav a:active {
-  color: lightgray;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.background-video {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-
 
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {

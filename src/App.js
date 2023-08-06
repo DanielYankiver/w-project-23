@@ -6,24 +6,13 @@ import Home from './pages/Home';
 import NoMatch from './pages/NoMatch';
 import Contact from './pages/Contact';
 import thunderVideo from './thunder-background.mp4'
+import Navbar from './Navbar';
 
 function App() {
   return (
     <div className='App'>
       <Router>
-       <div className='nav-container'>
-        <div className='nav'>
-              <Link to="/">
-                Home
-              </Link>
-              <Link to="/experience">
-                Experience
-              </Link>
-              <Link to="/contact">
-                Contact
-              </Link>
-          </div>
-       </div>
+        <Navbar/>
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/experience" element={<Experience/>} />
@@ -31,15 +20,6 @@ function App() {
           <Route path="*" element={<NoMatch />} />
         </Routes>
       </Router>
-      <video 
-        className='background-video'
-        autoPlay='autoplay'
-        loop
-        muted
-      > 
-        <source src={thunderVideo} type='video/mp4'/>
-        Your browser does not support this video
-      </video>
     </div>
   );
 }
