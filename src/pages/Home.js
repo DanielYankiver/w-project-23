@@ -1,4 +1,4 @@
-import bbLogo from '../bb-logo2.png';
+import bbLogo from '../bb-logo.png';
 import './Home.css';
 // import thunderVideo from '../thunder-background.mp4'
 
