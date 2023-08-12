@@ -18,6 +18,10 @@
   z-index: -1;
 }
 
+.logo-container{
+
+}
+
 .home-logo {
   height: 300px;
   pointer-events: none;
