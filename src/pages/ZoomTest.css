@@ -1,0 +1,32 @@
+
+.test-page {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  font: 700 12px system-ui;
+}
+
+.bb-logo-container {
+
+}
+
+.bb-logo {
+  width: 300px;
+  margin-top: -100px;
+}
+
+.background-video2 {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}

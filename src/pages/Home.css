@@ -1,4 +1,36 @@
-.home-page {
+
+.test-page {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  font: 700 12px system-ui;
+}
+
+.bb-logo-container {
+
+}
+
+.bb-logo {
+  width: 300px;
+}
+
+.background-video2 {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* .home-page {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -28,8 +60,14 @@
   opacity: 80%;
 }
 
+.bb-logo {
+  width: 300px;
+  pointer-events: none;
+  opacity: 80%;
+}
+
 .home-scroll-wrapper {
   position: absolute;
   bottom: 60px;
   right: 60px;
-}
+} */

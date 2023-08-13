@@ -5,6 +5,7 @@ import Experience from './pages/Experience';
 import Home from './pages/Home';
 import NoMatch from './pages/NoMatch';
 import Contact from './pages/Contact';
+import ZoomTest from './pages/ZoomTest';
 import thunderVideo from './thunder-background.mp4'
 import Navbar from './Navbar';
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/experience" element={<Experience/>} />
           <Route path="/contact" element={<Contact/>} />
+          <Route path="/zoom-test" element={<ZoomTest/>} />
           <Route path="*" element={<NoMatch />} />
         </Routes>
       </Router>
