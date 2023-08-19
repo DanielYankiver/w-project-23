@@ -5,7 +5,7 @@ import './Home.css';
 
 export default function Home() {
   useEffect(() => {
-    const zoomElement = document.querySelector('.home-page');
+    const zoomElement = document.querySelector('.test-page');
     let zoom = 1;
     const ZOOM_SPEED = 1;
   
@@ -15,7 +15,7 @@ export default function Home() {
           zoomElement.style.transform = `scale(${(zoom += ZOOM_SPEED)})`;
         } 
         else {
-          // ** zoom out: need to set limits ** //
+          // ** zoom out: need to set ** //
           // zoomElement.style.transform = `scale(${(zoom -= ZOOM_SPEED)})`;  
         }
       });
@@ -23,9 +23,25 @@ export default function Home() {
   }, [])
     
     return (
-      <div className='home-page'>
+      <div className='test-page'>
         <div className='bb-logo-wrapper'>
           <img src={bbLogo} className='bb-logo' alt='big-beard-logo' />
+        </div>
+        <div className='info-wrapper'>
+          <div className='name'>
+            Daniel Yankiver
+          </div>
+          <div className='home-description'>
+            Creative Software Engineer
+          </div>
+          <div className='home-scroll-wrapper'>
+            <div className='home-scroll-to-enter'>
+              SCROLL 
+            </div>
+            <div className='home-scroll-arrow'>
+              V
+            </div>
+          </div>
         </div>
         <video 
           className='background-video2'
