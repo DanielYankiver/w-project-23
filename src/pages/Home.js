@@ -44,7 +44,7 @@ export default function Home() {
           </div>
         </div>
         <video 
-          className='background-video2'
+          className='background-video'
           autoPlay='autoplay'
           loop
           muted
