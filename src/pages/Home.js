@@ -13,7 +13,12 @@ export default function Home() {
       document.addEventListener('wheel', function (e) {
         if (e.deltaY > 0) {
           zoomElement.style.transform = `scale(${(zoom += ZOOM_SPEED)})`;
+          // console.log(zoomElement.style.cssText)
+          console.log(e)
         } 
+        // else if (e.deltaY > 17.8302001953125) {
+          
+        // }
         else {
           // ** zoom out: need to set ** //
           // zoomElement.style.transform = `scale(${(zoom -= ZOOM_SPEED)})`;  
@@ -44,7 +49,7 @@ export default function Home() {
           </div>
         </div>
         <video 
-          className='background-video'
+          className='background-video2'
           autoPlay='autoplay'
           loop
           muted
