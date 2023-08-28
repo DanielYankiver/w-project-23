@@ -8,13 +8,17 @@ export default function Home() {
     const zoomElement = document.querySelector('.test-page');
     let zoom = 1;
     const ZOOM_SPEED = 1;
+
+    
+
+    
   
     return () => {
       document.addEventListener('wheel', function (e) {
         if (e.deltaY > 0) {
           zoomElement.style.transform = `scale(${(zoom += ZOOM_SPEED)})`;
           // console.log(zoomElement.style.cssText)
-          console.log(e)
+          // console.log(e)
         } 
         // else if (e.deltaY > 17.8302001953125) {
           
@@ -24,13 +28,14 @@ export default function Home() {
           // zoomElement.style.transform = `scale(${(zoom -= ZOOM_SPEED)})`;  
         }
       });
+      window.addEventListener()
     }
   }, [])
     
     return (
       <div className='test-page'>
         <div className='bb-logo-wrapper'>
-          <img src={bbLogo} className='bb-logo' alt='big-beard-logo' />
+          <img src={bbLogo} id='bb-logo' className='bb-logo' alt='big-beard-logo' />
         </div>
         <div className='info-wrapper'>
           <div className='name'>
